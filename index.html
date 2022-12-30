@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculation</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        fieldset{
+            width:30%;
+            margin: 0 auto;
+            font-size: large;
+        }
+        .col-1{
+            font-size: large;
+            padding: 25px;
+        }
+        .col{
+            padding: 25px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .btn{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>BMI Calculation</h1>
+    <fieldset>
+    <legend>BMI Calculation</legend>
+        <div class="col">
+            <label for="age">Enter The AGE:</label>
+            <input type="text" id="age" placeholder="Enter the age">
+        </div>
+
+        <div class="col-1">
+            <label for="gender">Gender:</label>
+           
+            <input type="radio" id="genmale" name="fill">
+             <label for="genmale">Male</label>
+            <input type="radio" id="genfemale" name="fill">
+            <label for="genfemale">Female</label>
+        </div>
+
+        <div class="col">
+            <label for="weight">Enter The Weight:</label>
+            <input type="text" id="weight" placeholder="Enter the weight">
+        </div>
+        
+        <div class="col">
+            <label for="height">Enter The Height:</label>
+            <input type="text" id="height" placeholder="Enter the height">
+        </div>
+
+        <div class="btn">
+            <button type="submit" id="btn">SUMBIT</button>
+        </div>
+    </fieldset>
+    <h1 id="total"></h1>
+    <script src="main.js"></script>
+</body>
+</html>
